@@ -1,4 +1,4 @@
-.App {
+.App01 {
   text-align: center;
 }
 
@@ -36,3 +36,83 @@
     transform: rotate(360deg);
   }
 }
+.bigBox {
+  /* border: 1px solid black; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: overlay;
+}
+
+.myCard {
+
+  border: 18px solid #8ffc9e;
+  height: 20rem;
+  min-width: 23rem;
+  margin: 18px;
+
+}
+
+img {
+  position: relative;
+  margin: 21px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  left: 194px;
+}
+
+.titleNo {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+  color: coral;
+  position: relative;
+  bottom: 100px;
+  left: 11px;
+}
+
+.genre {
+  color: chocolate;
+  position: relative;
+  bottom: 41px;
+  left: 12px;
+}
+
+.description {
+  height: 7rem;
+  width: 19rem;
+  /* border: 1px solid black; */
+  position: relative;
+  left: 10px;
+  bottom: 36px;
+  text-align: justify;
+}
+
+.myNav{
+  display: flex;
+}
+
+.btn{
+  height: 30px;
+    /* display: inline-block; */
+    width: 58px;
+}
+
+
+.titleDiv{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+  color: coral;
+  position: relative;
+  bottom: 109px;
+  left: 11px;
+  /* border: 1px solid red; */
+  height: 70px;
+  width: -moz-fit-content;
+  width: 189px;
+
+}
+

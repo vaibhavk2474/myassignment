@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: white;
+  color: #222;
+  padding: 0;
+  height: 100vh;
+}
+.myContainer {
+  height: 91vh;
+  background-color: #fafafa;
+}
+
+.myNavBgColor {
+  background-color: #e0e0e0;
+}
+.bigBox {
+  background-color: #fdfdfd;
+}
+
+.theme-options {
+  // border: 1px solid red;
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.5;
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+#theme-dark {
+  // border: 1px solid red;
+  height: 2rem;
+  width: 2rem;
+  background-color: #5c5c5c;
+}
+
+#theme-light {
+  border: 1px solid black;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+}
+// .App.theme-dark >.container>.row>.col>.bigBox
+// #28313E
+// .App.theme-dark>div>.myNav
+// .App.theme-dark>.myContainer>.container>.row>.col>.bigBox
+// .App.theme-dark>.myContainer>.container>.row>.col>.bigBox>.myCardContainer>.myCard
+// f1fbf3
+.App.theme-dark {
+  height: 100vh;
+  $p: &;
+  .container {
+    .row {
+      .col {
+        .bigBox {
+          background-color: #424242;
+        }
+      }
+    }
+  }
+
+  .myContainer {
+    background-color: #27303c;
+    .container {
+      .row {
+        .col {
+          .bigBox {
+            background-color: rgb(24, 26, 25);
+            .myCardContainer {
+              .myCard {
+                background-color: rgb(14, 1, 1);
+
+                .titleDiv {
+                  .title {
+                    color: white;
+                  }
+                }
+
+                .genre {
+                  color: white;
+                }
+                .description {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .myNavBgColor {
+    background-color: #424242;
+  }
+}
