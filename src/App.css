@@ -54,7 +54,7 @@
 
 }
 
-img {
+.image {
   position: relative;
   margin: 21px;
   height: 100px;
@@ -95,9 +95,9 @@ img {
 }
 
 .btn{
-  height: 30px;
+  height: fit-content;
     /* display: inline-block; */
-    width: 58px;
+    width: fit-content;
 }
 
 

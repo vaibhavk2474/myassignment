@@ -72,7 +72,11 @@ body {
   }
 
   .myContainer {
+
     background-color: #27303c;
+    h1{
+      color: white;
+    }
     .container {
       .row {
         .col {
@@ -96,6 +100,13 @@ body {
                 }
               }
             }
+
+
+            .myCardContainer{
+              .wrapper.myModal{
+                background-color: #27303c;
+              }
+            }
           }
         }
       }
@@ -105,4 +116,27 @@ body {
   .myNavBgColor {
     background-color: #424242;
   }
+}
+
+
+.App.theme-dark>.myContainer>.container>.row>.col>.myNav div input{
+    background-color: #222;
+    color: white;
+}
+
+.App.theme-dark>.myContainer>.container>.row>.col>.bigBox>.myCardContainer>.myModal{
+  background-color: #616161ba;
+}
+
+
+.page-item{
+  cursor: pointer;
+}
+
+.App.theme-dark>.myNavBgColor>.navbar>a{
+  color: white;
+}
+
+.App.theme-dark>.myNavBgColor>.navbar>.collapse>.navbar-nav>.nav-item a{
+  color: white;
 }

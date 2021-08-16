@@ -11,9 +11,9 @@ function App() {
     document.querySelector(".App").className = `App ${e.target.id}`;
   };
   return (
-    <div className="App theme-dark ">
+    <div className="App theme-light ">
       <Navbar handleTheme={handleTheme}></Navbar>
-      <div className="myContainer">
+      <div className="myContainer" >
         <Switch>
           <Route path="/login" component={Login}></Route>
           <Route path="/" component={Movies}></Route>

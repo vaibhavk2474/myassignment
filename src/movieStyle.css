@@ -29,6 +29,7 @@ body {
 			top: 100px;
 			left: 400px;
 			z-index: 1;
+
 }
 
 .card_left {
@@ -36,9 +37,13 @@ body {
 }
 
 .card_datails {
-	width: 90%;
-	padding: 30px;
-	margin-top: -25px;
+	/* border: 1px solid red; */
+    /* background-image: beige; */
+    /* width: 110%; */
+    /* padding: 30px; */
+    /* margin-top: -25px; */
+    height: fit-content;
+    margin: 15px;
 }
 .card_datails  h1 {
 	font-size: 30px;
@@ -182,7 +187,56 @@ button:hover {
 		}
 }
 
+.myMain_card{
+    color: #fff;
+    width: 752px;
+    height: 310px;
+    margin: 41px auto;
+    display: flex;
+    /* max-width: 766px; */
+    background: #00C9FF;
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+    box-shadow: 0 0 40px rgb(0 0 0 / 30%);
+    /* position: absolute; */
+    /* top: 93px; */
+    /* left: 400px; */
+    z-index: 5;
+}
+.myModal{
+	
+    height: 91vh;
+    display: block;
+    width: 161vh;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 5;
+    top: 0rem;
+    left: 0rem;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    background-color: #f5f5f5cf;
 
 
-
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+	from {bottom: -300px; opacity: 0.5} 
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+	from {bottom: -300px; opacity: 0.5}
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
 

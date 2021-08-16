@@ -66,6 +66,7 @@ let fetchMovies = async (token) => {
     console.log(movies);
     return movies;
   } catch (err) {
-    console.log(err.message);
+    console.log(err);
+    // return err
   }
 };

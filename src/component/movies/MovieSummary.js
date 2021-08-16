@@ -10,6 +10,8 @@ const [state, setstate] = useState("");
     setstate(url)
     }, [])
 
+
+
   return (
       <div className="myCardContainer" id={singleMovie.uuid}  onClick={(e)=>{
 
@@ -36,7 +38,7 @@ const [state, setstate] = useState("");
     </div>
       </div> */}
 <div class="myCard">
-            <img src={state} style={{backgroundColor:"black"}} alt="movie_pic"/>
+            <img className="image" src={state} style={{backgroundColor:"black"}} alt="movie_pic"/>
              <div className="titleDiv"><div class="title">{singleMovie.title}</div></div> 
             <div class="genre"> Genres: {singleMovie.genres}</div>
             <div class="description">
@@ -44,18 +46,36 @@ const [state, setstate] = useState("");
             </div>
         </div>
 
-    <div class="wrapper" id="card" style={{display:"none"}}  onMouseLeave={(e)=>{
-           e.currentTarget.style.display="none"
 
-    }}>
-        <div class="main_card">
+
+
+        <div class="wrapper myModal" id="card" style={{display:"none"}}  onMouseLeave={(e)=>{
+          e.currentTarget.style.display="none";
+            
+        }}   >
+        
+        <div class="myMain_card" id="myCard" style={{display:'block'}}  onMouseLeave={(e)=>{
+          e.currentTarget.parentElement.style.display="none"
+        }} >
+
+            <div className="close" style={{cursor:"pointer", backgroundColor:"green"}}  onClick={(e)=>{
+              e.target.parentElement.parentElement.style.display="none"
+            }}>
+                <div>close</div>
+            </div>
             <div class="card_left">
-                <div class="card_datails">
-                    <h1>{singleMovie.title}</h1>
-                    <p>Genres: {singleMovie.genres}</p>
+              <div style={{display:"flex"}}>
+              <img style={{height:"85px"}}src={state}  ></img>
+               <h1 style={{padding:"15px"}}>{singleMovie.title}</h1>
 
-                    <p class="disc">{singleMovie.description}</p>
-                    <a href="https://www.imdb.com/title/tt4912910/" target="_blank">Read More</a>
+              </div>
+              <div>
+              <p>Genres: {singleMovie.genres?singleMovie.genres:"none"}</p>
+              </div >
+                <div class="card_datails">
+                    
+
+                    <p style={{height:"fit-content"}}>{singleMovie.description}</p>
 
                 </div>
             </div>

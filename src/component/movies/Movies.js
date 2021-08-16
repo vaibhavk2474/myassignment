@@ -19,7 +19,7 @@ if (state.login) {
 }
         
     } else {
-     return <h1>check you are login or not</h1>
+     return <h1>Please First login </h1>
  }
 }
 

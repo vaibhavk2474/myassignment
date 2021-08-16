@@ -10,11 +10,13 @@ export default function MoviesPagination(props) {
   let handleInput = (e) => {
     // console.log(e.target.value);
 
+    handleSearch();
     setValue(e.target.value);
   };
   //   console.log(movies);
 
   let pagination = (e) => {
+    setValue("");
     let pageNo = e.target.id;
     // console.log(pageNo);
 
@@ -127,34 +129,34 @@ export default function MoviesPagination(props) {
             </ul>
             <div>
               <input
+                id="input"
                 type={"search"}
                 value={value}
                 onChange={handleInput}
               ></input>
             </div>
-            <button className="btn btn-outline-primary" onClick={handleSearch} style={{display:"inline-block"}}>click</button>
+            {/* <button className="btn btn-outline-primary" onClick={handleSearch}  style={{display:"inline-block"}}>click</button> */}
           </nav>
 
           {/* {    console.log(movies)} */}
           {/* <div className="container"> */}
-            {/* <div className="row"> */}
-              {/* <div className="col"> */}
-                  <div className="bigBox">
-
-                {movies &&
-                  movies.map((item) => {
-                      return (
-                          <>
-                        <MovieSummary
-                          singleMovie={item}
-                          key={item.uuid}
-                          ></MovieSummary>
-                      </>
-                    );
-                })}
-                </div>
-              {/* </div> */}
-            {/* </div> */}
+          {/* <div className="row"> */}
+          {/* <div className="col"> */}
+          <div className="bigBox">
+            {movies &&
+              movies.map((item) => {
+                return (
+                  <>
+                    <MovieSummary
+                      singleMovie={item}
+                      key={item.uuid}
+                    ></MovieSummary>
+                  </>
+                );
+              })}
+          </div>
+          {/* </div> */}
+          {/* </div> */}
           {/* </div> */}
         </div>
       </div>
